@@ -8,7 +8,7 @@ export const TodoList : React.FC = () => {
     return (
         <>
             <div>todoリスト</div>
-            {todos?.map((todo) => (
+            {todos.map((todo) => (
                 <li key={todo.id}>{todo.title}</li>
             ))}
         </>
