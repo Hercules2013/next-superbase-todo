@@ -3,8 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { useAddTodo } from '../Hooks/useAddTodo';
 
 export const TodoList : React.FC = () => {
-    const {todos, fetchTodos} = useAddTodo()
-
+    const {todos} = useAddTodo()
     return (
         <>
             <div>todoリスト</div>

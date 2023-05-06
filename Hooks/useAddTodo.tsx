@@ -9,10 +9,10 @@ export const useAddTodo = () => {
     useEffect(() => {
         fetchTodos()
     }, [])
-
+    
     const fetchTodos = async () => {
         const datas : any = await supabase.from('todos').select('*');
-        setTodos(datas.body)
+        setTodos(datas.data);
     }
 
     return {todos, fetchTodos};
